@@ -17,14 +17,14 @@ An automated, transformer-based essay scoring web platform developed to evaluate
 ## Gradio Web Interface & Test Cases
 
 <p align="center">
-  <h3>1. Tagalog Evaluation (Bin 0 - Below Average)</h3>
+  <h3>1. English Evaluation (Bin 2 - Above Average)</h3>
+  <img src="Assets-Sulat-At-Marka/gradio-english-bin2.png" alt="Gradio English Evaluation" width="85%"/>
+  <br><br>
+  <h3>2. Tagalog Evaluation (Bin 0 - Below Average)</h3>
   <img src="Assets-Sulat-At-Marka/gradio-tagalog-bin0.png" alt="Gradio Tagalog Evaluation" width="85%"/>
   <br><br>
-  <h3>2. Taglish Evaluation (Bin 1 - Average)</h3>
+  <h3>3. Taglish Evaluation (Bin 1 - Average)</h3>
   <img src="Assets-Sulat-At-Marka/gradio-taglish-bin1.png" alt="Gradio Taglish Evaluation" width="85%"/>
-  <br><br>
-  <h3>3. English Evaluation (Bin 2 - Above Average)</h3>
-  <img src="Assets-Sulat-At-Marka/gradio-english-bin2.png" alt="Gradio English Evaluation" width="85%"/>
 </p>
 
 ---
