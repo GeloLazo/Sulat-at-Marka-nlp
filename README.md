@@ -1,40 +1,36 @@
-# Sulat at Marka: Automated Multilingual Essay Scoring Application
+# Sulat at Marka: Bilingual Automated Essay Scoring System
 
-Sulat at Marka is an automated essay evaluation system designed to grade student essays written in English, Tagalog, and Taglish. The project uses a fine-tuned multilingual transformer model to generate instant rubric-based scores.
+An automated, transformer-based essay scoring web platform developed to evaluate English, Tagalog, and Taglish argumentative essays on a **0–2 performance rubric scale** using a fine-tuned XLM-RoBERTa architecture.
 
----
+## System Overview
 
-## Overview
-
-Checking and scoring essays manually takes a significant amount of time, especially when dealing with multilingual or code-switched text. This project was built to automate that process by evaluating essay structure, mechanics, and content clarity based on a standard 1 to 6 rubric scale.
-
----
-
-## Tech Stack
-
-- Primary Language: Python 3
-- Machine Learning Frameworks: PyTorch, Hugging Face Transformers
-- Model Architecture: XLM-RoBERTa (Fine-tuned)
-- Data Processing: Pandas, NumPy
-- User Interface: Gradio
+* **Model Architecture:** Fine-tuned XLM-RoBERTa (Cross-Lingual Language Model)
+* **Language Support:** English, Tagalog, and Taglish (Code-Switched)
+* **Scoring Rubric Scale:**
+  * **Bin 0 (Below Average):** Lacks clear structure, logical flow, or sufficient supporting evidence.
+  * **Bin 1 (Average):** Demonstrates a clear argument with adequate organization and bilingual proficiency.
+  * **Bin 2 (Above Average):** Shows sophisticated reasoning, strong evidence, and high structural coherence.
+* **User Interface:** Interactive Gradio Web Application featuring real-time logit score visualization and bin classification.
 
 ---
 
-## Key Features
+## Gradio Web Interface & Test Cases
 
-- Multilingual Evaluation: Handles essays written in Tagalog, English, or Taglish using the fine-tuned XLM-RoBERTa model.
-- Standardized Scoring: Maps text inputs to a 1-6 rubric scale for consistent grading.
-- Interactive Interface: Built with Gradio so users can easily paste essay drafts and review scores instantly.
-
----
-
-## How It Works
-
-1. Essay Submission: The user inputs an essay into the Gradio interface.
-2. Text Tokenization: The text is processed through the XLM-RoBERTa tokenization pipeline.
-3. Scoring & Inference: The fine-tuned transformer model analyzes semantic structure and predicts the essay score.
-4. Result Display: The calculated rubric score and score details are displayed on screen.
+<p align="center">
+  <h3>1. Tagalog Evaluation (Bin 0 - Below Average)</h3>
+  <img src="Assets-SulatAtMarka/gradio-tagalog-bin0.png" alt="Gradio Tagalog Evaluation" width="85%"/>
+  <br><br>
+  <h3>2. Taglish Evaluation (Bin 1 - Average)</h3>
+  <img src="Assets-SulatAtMarka/gradio-taglish-bin1.png" alt="Gradio Taglish Evaluation" width="85%"/>
+  <br><br>
+  <h3>3. English Evaluation (Bin 2 - Above Average)</h3>
+  <img src="Assets-SulatAtMarka/gradio-english-bin2.png" alt="Gradio English Evaluation" width="85%"/>
+</p>
 
 ---
 
-*Developed as an applied NLP and machine learning software project.*
+## Technical Features
+
+* **Bilingual & Code-Switched Processing:** Optimized for multi-language essay evaluation without requiring separate pre-translation pipelines.
+* **Real-time Logit Analytics:** Provides transparent debug metrics and performance meters alongside predicted scoring bins.
+* **Gradio Web Integration:** Clean, responsive UI for input submission and visual performance tracking.
